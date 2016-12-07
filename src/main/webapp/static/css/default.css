@@ -1,0 +1,38 @@
+html,body,div,ul,li,ol,div,a{
+    padding: 0;
+    margin: 0;
+}
+ul,li,ol{
+    list-style: none;
+}
+html,body{
+    height: 100%;
+    background-color: #eeeeee;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin-top: 72px;
+    float: right;
+}
+.container .warp{
+    padding: 16px 16px 0 16px;
+    border-bottom: 1px solid #d0dee5;
+    background-color: white;
+}
+.title{
+    height:48px;
+    display: inline-block;
+}
+.text{
+    line-height: 48px;
+    height:46px;
+    text-align: center;
+    border-bottom: solid 3px #66c9f3;
+    width:102px;
+    display: inline-block;
+}
+.welcome{
+    text-align: center;
+}

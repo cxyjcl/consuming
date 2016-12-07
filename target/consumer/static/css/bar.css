@@ -1,0 +1,27 @@
+.nav{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background-color: #393E3E;
+}
+.logOut a{
+    color:#eeeeee;
+}
+.nav ul{
+    margin-top: 72px;
+}
+.nav ul li a{
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #eee;
+    cursor: pointer;
+}
+.nav-active{
+    background-color: #0278AE;
+}
+.nav ul li a:hover{
+    background-color: #539dd8;
+}

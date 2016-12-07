@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>耗材管理系统</title>
+    <link rel="stylesheet" href="../../static/css/excel.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../../static/css/bar.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../../static/css/header.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="default.html">主页</a></li>
+        <li><a href="consuming.html">申报耗材</a></li>
+        <li><a href="find.html">申报查询</a></li>
+        <li><a href="receive.html">申报领取</a></li>
+        <li><a href="confirm.html">申报确认</a></li>
+        <li><a href="recorder.html">领用记录</a></li>
+        <li><a href="store.html">库存查询</a></li>
+        <li><a href="excel.html">Excel</a></li>
+        <li><a href="../user/user.html">用户管理</a></li>
+        <li><a href="../user/change.html">修改密码</a></li>
+        <li><a href="management.html">耗材管理</a></li>
+    </ul>
+</div>
+<div class="header">
+    <div class="logo">
+        <img src="../../static/img/logo.png" height="45"/>
+    </div>
+    <div class="tool">
+        <ul>
+            <li class="logOut"><a href="#">注销</a></li>
+            <li>equipmenter[设备管理者][设备处]</li>
+        </ul>
+    </div>
+</div>
+<div id="container" class="container">
+    <div class="warp">
+        <div class="title"><span class="text">Excel</span></div>
+    </div>
+    <div class="content">
+        <div class="widget-header"><span class="left-header-text">Excel</span></div>
+        <div class="widget-content">
+            <div>
+                <div class="text-block">请选择查询方式：</div>
+                <div class="text-block">
+                    <select id="select_method">
+                        <option>缺省</option>
+                        <option>按院系</option>
+                        <option>按项目名</option>
+                    </select>
+                </div>
+            </div>
+            <div id="expand">
+                <div id="by_unit">
+                    <div class="text-block">按院系：</div>
+                    <div class="text-block">
+                        <select><option>123</option></select>
+                    </div>
+                    <div class="text-block">
+                        <select><option>123</option></select>
+                    </div>
+                </div>
+                <div id="by_project_name">
+                    <div class="text-block">按项目名称：</div>
+                    <div class="text-block">
+                        <select><option>123</option></select>
+                    </div>
+                </div>
+                <div class="text-block">
+                    <a class="btn w-70 -btn" id="download">下载EXCEL</a>
+                </div>
+                <div class="text-block">
+                    <a class="btn w-70 -btn" id="upload">上传EXCEL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../static/js/jquery-1.3.2.min.js"></script>
+<script src="../../static/js/excel.js"></script>
+</body>
+</html>

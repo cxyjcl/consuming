@@ -1,0 +1,172 @@
+*{
+    margin:0 auto;
+    padding: 0;
+}
+
+body,html{
+    height:100%;
+    font-size: 14px;
+    font-family: "Microsoft YaHei" !important;
+}
+
+body{
+    background: url("../../static/img/background.jpg") no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+.hide{
+    display: none;
+}
+.header{
+    height: 72px;
+    width: 100%;
+    display: block;
+    background-color: #1d242b;
+}
+.header .logo{
+    float:left;
+    padding-left: 14px;
+    padding-top: 14px;
+}
+@media (max-width: 970px) {
+    .header .tool{
+        display: none;
+    }
+}
+.header .tool{
+    padding-top:26px;
+    padding-right: 14px;
+    float: right;
+}
+.header .tool li{
+   float:right;
+   color: #ccc;
+}
+.header .tool .logOut a{
+   margin-left: 14px;
+}
+#errorMessage,#findErrorMessage{
+    padding:5px 5px 5px 0;
+    color:red;
+}
+
+.input{
+    font-size: 14px;
+    width: auto;
+    height: 32px;
+    border: 1px solid #DBE2EF;
+    background-color: #fff;
+    border-radius: 2px;
+    padding-right: 0.5em;
+    margin-bottom: 24px;
+    padding-left: 0.5em;
+}
+.btn,.btn-hollow{
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid #2185D0;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 34px;
+    line-height: 34px;
+    
+    display: inline-block;
+    transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+}
+.btn{
+    background-color: #2185D0;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.btn-hollow{
+    background-color: #fff;
+    color: #2185D0;
+
+}
+.button{
+    font-size: 12px;
+    border: 1px #003399 solid;
+    color: #006699;
+    border-bottom: #93bee2 1px solid;
+    border-left: #93bee2 1px solid;
+    border-right: #93bee2 1px solid;
+    border-top: #93bee2 1px solid;
+    background-color: #e8f4ff;
+    cursor: hand;
+    font-style: normal;
+    height: 32px;
+    width:85px;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:10px;            /* W3C syntax */
+}
+.btn:hover,.btn-hollow:hover{
+    transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+}
+.btn:hover{
+    background-color: #0F73BE;
+}
+.btn-hollow:hover{
+    background-color: #1279c6;
+    color: #fff;
+}
+.w-100{
+    width: 95%;
+}
+.w-30{
+    width: 30%;
+}
+.btn-100{
+    width: 100%;
+}
+.login,.forget{
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 5%;
+    width:350px;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696',Direction=135, Strength=5);
+    background-color: rgba(255,255,255,0.6);
+    -moz-box-shadow:2px 2px 5px #969696;
+    -webkit-box-shadow:2px 2px 5px #969696;
+    box-shadow:2px 2px 5px #969696;
+}
+.login form{
+    height: 280px;
+    padding: 20px 14px 0px 14px;
+}
+.forget form{
+    height: 350px;
+    padding: 20px 14px 0px 14px;
+}
+#verify_img{
+    vertical-align: top;
+}
+.login-footer{
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.login-footer a{
+    cursor: pointer;
+}
+.block{
+ display:inline-block;
+}
+.text{
+    margin-left: 15px;
+}

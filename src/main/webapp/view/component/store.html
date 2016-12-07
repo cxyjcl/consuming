@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>耗材管理系统</title>
+    <link rel="stylesheet" href="../../static/css/store.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../../static/css/bar.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../../static/css/header.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="default.html">主页</a></li>
+        <li><a href="consuming.html">申报耗材</a></li>
+        <li><a href="find.html">申报查询</a></li>
+        <li><a href="receive.html">申报领取</a></li>
+        <li><a href="confirm.html">申报确认</a></li>
+        <li><a href="recorder.html">领用记录</a></li>
+        <li><a href="store.html">库存查询</a></li>
+        <li><a href="excel.html">Excel</a></li>
+        <li><a href="../user/user.html">用户管理</a></li>
+        <li><a href="../user/change.html">修改密码</a></li>
+        <li><a href="management.html">耗材管理</a></li>
+    </ul>
+</div>
+<div class="header">
+    <div class="logo">
+        <img src="../../static/img/logo.png" height="45"/>
+    </div>
+    <div class="tool">
+        <ul>
+            <li class="logOut"><a href="#">注销</a></li>
+            <li>equipmenter[设备管理者][设备处]</li>
+        </ul>
+    </div>
+</div>
+<div id="container" class="container">
+    <div class="warp">
+        <div class="title"><a class="text" href="#" id="audit">库存查询</a></div>
+    </div>
+    <div class="find content">
+        <div>
+            <div class="widget-header"><span class="left-header-text">库存查询</span></div>
+            <div class="widget-content">
+                <div>
+                    <div class="text-block">请选择年份：</div>
+                    <div class="text-block">
+                        <select id="select_time">
+                        </select>
+                    </div>
+                </div>
+                <div >
+                    <div class="text-block">请选择查询方式：</div>
+                    <div class="text-block">
+                        <select id="select_method">
+                            <option>仅按年份</option>
+                            <option>按年份+院系</option>
+                            <option>按耗品名称（含年份+院系）</option>
+                            <option>按实验员（含年份+院系）</option>
+                            <option>按项目名称（含年份+院系）</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="expand">
+                    <div id="by_name">
+                        <div>
+                            <div class="text-block">请选择院系名称：</div>
+                            <div class="text-block">
+                                <select>
+                                    <option>数学与计算机学院</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="by_consuming_name">
+                            <div class="text-block">耗品名称：</div>
+                            <div class="text-block"><input type="text"  class="input w-70" placeholder="按耗品名称"></div>
+                        </div>
+                        <div id="by_project_name">
+                            <div class="text-block">项目名称：</div>
+                            <div class="text-block"><input type="text"  class="input w-70" placeholder="项目名称"></div>
+                        </div>
+                        <div id="by_equipmenter_name">
+                            <div class="text-block">实验员：</div>
+                            <div class="text-block"><input type="text"  class="input w-70" placeholder="实验员"></div>
+                        </div>
+                    </div>
+                    <div id="other">
+                        <div class="text-block"></div>
+                        <a class="btn  w-70 other-btn">确认</a>'
+                        <a class="btn  w-120 other-btn right">导出当前查询</a>
+                        <a class="btn  w-70 other-btn right">本页取消</a>
+                        <a class="btn  w-70 other-btn right">本页全选</a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="widget-header"><span class="left-header-text">申报查询</span></div>
+            <div class="widget-content">
+                <table class="table">
+                    <tr>
+                        <th>序号</th>
+                        <th>单位</th>
+                        <th>实验员</th>
+                        <th>实验课程</th>
+                        <th>实验项目</th>
+                        <th class="large-th">项目计划学时</th>
+                        <th>实验组数</th>
+                        <th>实验人数</th>
+                        <th>备注</th>
+                        <th>采购方式</th>
+                        <th>分包</th>
+                        <th>申报日期</th>
+                        <th>审核者</th>
+                        <th>耗品详情</th>
+                        <th>导出</th>
+                    </tr>
+                    <tr>
+                        <th>序号</th>
+                        <th>单位</th>
+                        <th>实验员</th>
+                        <th>实验课程</th>
+                        <th>实验项目</th>
+                        <th class="large-th">项目计划学时</th>
+                        <th>实验组数</th>
+                        <th>实验人数</th>
+                        <th>备注</th>
+                        <th>采购方式</th>
+                        <th>分包</th>
+                        <th>申报日期</th>
+                        <th>审核者</th>
+                        <th><a class="btn w-70 -btn" id="find_more">查看</a></th>
+                        <th><input type="checkbox"></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../static/js/jquery-1.3.2.min.js"></script>
+<script src="../../static/js/store.js"></script>
+</body>
+</html>

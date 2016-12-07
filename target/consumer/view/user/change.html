@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>耗材管理系统</title>
+    <link rel="stylesheet" href="../../static/css/change.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../../static/css/bar.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../../static/css/header.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+
+<div class="nav">
+    <ul>
+        <li><a href="../component/default.html">主页</a></li>
+        <li><a href="../component/consuming.html">申报耗材</a></li>
+        <li><a href="../component/find.html">申报查询</a></li>
+        <li><a href="../component/receive.html">申报领取</a></li>
+        <li><a href="../component/confirm.html">申报确认</a></li>
+        <li><a href="../component/recorder.html">领用记录</a></li>
+        <li><a href="../component/store.html">库存查询</a></li>
+        <li><a href="../component/excel.html">Excel</a></li>
+        <li><a href="user.html">用户管理</a></li>
+        <li><a href="change.html">修改密码</a></li>
+        <li><a href="../component/management.html">耗材管理</a></li>
+    </ul>
+</div>
+<div class="header">
+    <div class="logo">
+        <img src="../../static/img/logo.png" height="45"/>
+    </div>
+    <div class="tool">
+        <ul>
+            <li class="logOut"><a href="#">注销</a></li>
+            <li>equipmenter[设备管理者][设备处]</li>
+        </ul>
+    </div>
+</div>
+<div id="container" class="container">
+    <div class="warp">
+        <div class="title"><span class="text">修改密码</span></div>
+    </div>
+    <div class="content" id="create">
+        <div class="widget-header"><span class="left-header-text">用户管理 > 创建用户</span></div>
+        <div class="widget-content">
+            <div>
+                <span  class="text-block text-right">当前密码：</span>
+                <div  class="text-block"><input type="text"  class="input w-240" id="username"></div>
+            </div>
+            <div>
+                <span  class="text-block text-right">新密码：</span>
+                <div class="text-block"><input type="password"  class="input w-240" id="password"></div>
+            </div>
+            <div>
+                <span  class="text-block text-right">确认密码：</span>
+                <div  class="text-block"><input type="password"  class="input w-240" id="re_password"></div>
+            </div>
+            <div>
+                <span  class="text-block text-right">&nbsp;</span>
+                <a  id="findButton" class="btn w-240">确认</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../static/js/content.js" charset="utf-8"></script>
+</body>
+</html>

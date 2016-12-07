@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.whpu.management.dao.ConsumingDao">
+    <insert id="addProject" parameterType="cn.whpu.management.entity.Project_Info" keyProperty="id" useGeneratedKeys="true">
+        insert into t_project_info ( project, need_time, purchase_method,
+        subpackage, experimenter, lesson, plan,subgroup, people, remark,declare_time,status,user_id) values
+            ( #{project}, #{need_time}, #{purchase_method},
+            #{subpackage}, #{experimenter},
+            #{lesson}, #{plan},
+            #{subgroup}, #{people},
+            #{remark},#{declare_time},#{status},#{user_id});
+    </insert>
+    <insert id="addConsuming" parameterType="cn.whpu.management.entity.Consuming_Info">
+        insert into t_consuming_info ( consuming, standard, pack,
+        brand, unit, num, classify,is_danger, single_price, sum_price,project_info_id) values
+            ( #{consuming}, #{standard}, #{pack},
+            #{brand}, #{unit},
+            #{num}, #{classify},
+            #{is_danger}, #{single_price},
+            #{sum_price},#{project_info_id});
+    </insert>
+    <select id="getProjectInfo" resultType="cn.whpu.management.entity.Project_Info">
+        select * from t_project_info;
+    </select>
+</mapper>
